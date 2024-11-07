@@ -1,0 +1,22 @@
+{
+  "name": "M4.257 - PAC1",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniFranques-UOC/M4.257-PAC1.git"
+  },
+  "author": "Dani Franquès <dfranques@uoc.edu>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DaniFranques-UOC/M4.257-PAC1/issues"
+  },
+  "homepage": "https://github.com/DaniFranques-UOC/M4.257-PAC1#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
