@@ -1,0 +1,61 @@
+
+@mixin box-navigation() {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+// menú
+.navigation {
+    @include box-navigation();
+    background: $backcolor-menu;
+    box-shadow: 0 0 5px 0 rgba($font-color-dark, .5);
+
+    &__list {
+        @include box-navigation();
+        list-style: none;
+        justify-content: right;
+        margin: 0;
+        padding: 16px;
+        @media (min-width: $mqMinWidth) {
+            display: flex;
+            flex-wrap: nowrap;
+        }        
+    }
+
+    &__link {
+        display: block;
+        color: $color-menu;
+        text-decoration: none;
+        margin: 0 15px;
+        padding: 10px;
+        font-size: 1.5em;
+        @media (min-width: $mqMinWidth) {
+            font-size: 1em;
+        }        
+    }      
+}  
+
+nav ul li {
+    text-align: center;
+}
+
+.icona {
+    // en mode mobile s'amaga
+    display: none;
+    @media (min-width: $mqMinWidth) {
+        display: inline;
+    }        
+}
+
+nav ul li a:hover {
+    border: none;
+    color: $font-menu-active-color;
+    // text-decoration: underline;
+    @media (min-width: $mqMinWidth) {
+        // border: 1px solid white;
+        background-color: white;
+        color:black;
+        text-decoration: none;
+    }        
+
+}

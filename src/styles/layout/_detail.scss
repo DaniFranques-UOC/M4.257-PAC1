@@ -1,0 +1,107 @@
+.content-detail {
+
+    @include flex-column();
+    align-items:flex-start;
+    height: 100%;
+    margin: 1rem;
+    @media (min-width: $mqMinWidth) {
+        flex-direction: row;
+    }        
+
+    // revisar per posar amplada 80%/20%
+}
+
+.monument-detail-container {
+    display: flex;
+    flex-direction: row;
+    @media (min-width: $mqMinWidth) {
+        flex-direction: column;
+    }        
+}
+
+.detail-main, .detail-titol, .detail-text {
+    padding: 10px;
+}
+
+.detail-text {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $mqMinWidth) {
+        flex-direction: row;
+    }        
+
+    &-explicacio {
+        text-align: justify;
+
+        & p {
+            padding: 15px;
+        }
+        
+    }
+    
+}
+
+.detail-imatge {
+    aspect-ratio: 1;
+    display: block;
+    height: auto;
+
+    @media (min-width: $mqMinWidth) {
+        border-radius: 1rem;        
+        width: 480px;
+    }        
+
+}
+
+.monuments-relacionats {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-altres {
+    text-align : center;
+
+    @media (min-width: $mqMinWidth) {
+        border-radius: 10rem;        
+    }        
+
+    & a {
+        text-decoration-line: none;
+    }
+
+    &-monument {
+        padding-bottom: 10px;
+
+        &-title {
+            padding: 5px;
+            margin-top: 1px;
+            text-align : center;
+            font-weight: bold;    
+        }
+
+        &-img img {
+            margin-bottom: 10px;
+            width: 180px;
+        
+            @media (min-width: $mqMinWidth) {
+                border-radius: 1rem;        
+            }        
+        
+            &:hover {
+                @media (min-width: $mqMinWidth) {
+                    border-radius: 10rem;        
+                }  
+              }  
+        }
+        // tot el monument
+        // &:hover {
+        //     @media (min-width: $mqMinWidth) {
+        //         background-color: $back-color-category-monument-hover;
+        //         border-radius: 1rem;        
+        //     }  
+        // }  
+    }
+        
+}

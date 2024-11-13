@@ -1,0 +1,61 @@
+.bibliography {
+    background-color: red;
+// per posar en un mixin de coses similars
+    background: rgba(black, 0.05);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    margin: auto;
+    @media (min-width: $mqMinWidth) {
+        padding: 3rem;
+        width: 50%;    
+    }        
+
+}
+
+
+.bibliography a {
+    // icona d'enllaç extern
+    background-image: url(../images/links/external-link.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 0.85em;
+    padding-right: 1em;
+}
+
+.link-detail {
+
+}
+
+.bibliography ul {
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    // list-style: none; 
+    list-style:first-letter;
+    font-size: 0.8rem;
+  
+    li {
+      display: block;
+  
+      a {
+        // border-bottom: none;
+        text-decoration: none;
+      }
+  
+      a:hover {
+        // color: var(--accent-color);
+        font-weight: 700;
+      }
+    }
+  
+    li.active {
+      font-weight: 700;
+    }
+    
+    h3 {
+      text-align: left;
+    }
+  }

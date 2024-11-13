@@ -1,0 +1,51 @@
+
+.home {
+    background-image: url(../images/main/Constanti-Portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;    
+}
+
+@mixin home-hx() {
+    color: $home-base-color;
+    // color:green;
+    letter-spacing: -1px;
+    text-align: center;
+    font-weight: 700;
+}
+
+section.inici h1 {
+    @include home-hx();
+    font-size: 2.5rem;
+    @media (min-width: 576px) {
+        font-size: 8rem;
+      }
+  
+      @media (min-width: 768px) {
+        font-size: 10rem;
+      }
+  
+      @media (min-width: 1200px) {
+        font-size: 12rem;
+      }    
+}
+
+section.inici h2{
+    @include home-hx();
+    font-size: 1.25rem;
+    @media (min-width: 576px) {
+        font-size: 4rem;
+      }
+  
+      @media (min-width: 768px) {
+        font-size: 5rem;
+      }
+  
+      @media (min-width: 1200px) {
+        font-size: 6rem;
+      }    
+}
+
+section.container {
+  margin:auto;
+}

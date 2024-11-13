@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "parcel:dev": "parcel",
+    "parcel:dev": "parcel --open",
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
-    "start": "npm-run-all clean parcel:dev",
+    "start": "npm-run-all clean parcel:dev ",
     "build": "npm-run-all clean parcel:build"
   },
   "repository": {
@@ -22,8 +23,14 @@
   },
   "homepage": "https://github.com/DaniFranques-UOC/M4.257-PAC1#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.12.0",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^2.0.1",
     "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0"
   }
 }

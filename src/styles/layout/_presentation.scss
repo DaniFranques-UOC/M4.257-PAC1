@@ -1,0 +1,36 @@
+.presentation {
+    // display: flex;
+    // flex-direction: column;
+    @include flex-column();
+    align-items: center;
+
+    background: rgba(black, 0.05);
+    border-radius: 10px;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+    text-align: justify;
+    font-size: .9rem;
+    padding: 2rem;
+    @media (min-width: $mqMinWidth) {
+        padding: 3rem;
+        width: 50%;    
+    }        
+}
+
+.presentation-text { padding: 1rem; }
+
+.presentation-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+//  REVISAR que no acaba d'anar bé la imatge de la presentació
+.presentation-img  {
+    margin: 5px;
+    width: auto;
+    @media (min-width: $mqMinWidth) {
+        width: auto;
+        height: auto;
+    }         
+}

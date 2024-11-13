@@ -1,0 +1,24 @@
+footer {
+    background-color: transparent;
+    background-color: $back-color-footer;
+
+    color: $font-color-footer;
+    font-weight: 500;
+    color: $base-color;    
+// només si el volem tenir fixat
+    // position: absolute;
+    margin-top: auto;
+
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    padding-right: 100px;
+    font-size: 0.75rem;
+    text-align: center;
+    @media (min-width: $mqMinWidth) {
+        text-align: right;
+    }  
+
+}
