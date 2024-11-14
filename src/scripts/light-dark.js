@@ -6,4 +6,5 @@ function changeTheme(ev) {
     document.documentElement.setAttribute('theme', 'dark');
   }
 }
+
 colorSwitch.addEventListener('change', changeTheme);
