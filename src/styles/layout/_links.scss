@@ -1,6 +1,4 @@
 .bibliography {
-    background-color: red;
-// per posar en un mixin de coses similars
     background: rgba(black, 0.05);
     border-radius: 10px;
     display: flex;
@@ -13,48 +11,36 @@
         width: 50%;    
     }        
 
-}
+    a {
+      text-decoration: none;
+      color:var(--color-font);
 
-
-.bibliography a {
-    // icona d'enllaç extern
-    background-image: url(../images/links/external-link.svg);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: 0.85em;
-    padding-right: 1em;
-}
-
-.link-detail {
-
+      background-image: url(../images/links/external-link.svg);
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: 0.85em;
+      padding-right: 1em;
+  
+      font-size: .9rem;    
+    }    
+    a:hover {
+      font-weight: 700;
+      text-decoration:underline;
+    }    
 }
 
 .bibliography ul {
     margin-left: 0;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    // list-style: none; 
     list-style:first-letter;
     font-size: 0.8rem;
   
     li {
       display: block;
-  
-      a {
-        // border-bottom: none;
-        text-decoration: none;
-      }
-  
-      a:hover {
-        // color: var(--accent-color);
-        font-weight: 700;
-      }
     }
   
-    li.active {
-      font-weight: 700;
-    }
-    
+    // selector nonmés per la pàgina d'enllaços
     h3 {
       text-align: left;
     }

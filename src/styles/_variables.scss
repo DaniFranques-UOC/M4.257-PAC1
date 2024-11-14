@@ -8,7 +8,7 @@ $font-color-footer: red;
 $back-color-footer: rgb(160, 152, 152);
 
 $color-menu: white;
-$back-color-menu: black;
+$back-color-menu: $backcolor-menu;//black;
 $font-menu-color: #0a0a0a;
 $font-menu-active-color: $color-menu;
 
@@ -16,4 +16,5 @@ $back-color-category-monument: rgb(245, 240, 240);
 $back-color-category-monument-hover: rgb(212, 204, 204);
 
 
-$mqMinWidth: 480px
+$mqMinWidth: 480px;
+
