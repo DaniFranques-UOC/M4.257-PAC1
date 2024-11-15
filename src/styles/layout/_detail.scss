@@ -42,6 +42,15 @@
     }
 }
 
+.detail-img {
+    // quan sigui visualitzat en un dispostiu de mida de pantalla coma molt mqMinWidth
+    @media (max-width: $mqMinWidth) {
+        align-self: center;
+        & figcaption {
+            display: none;
+        }
+    }        
+}
 .detail-imatge {
     aspect-ratio: 1;
     display: block;
